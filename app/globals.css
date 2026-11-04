@@ -1,0 +1,27 @@
+:root { color-scheme: dark; --bg: #0d1117; --panel: #161b22; --muted: #8b949e; --green: #39d353; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: #f0f6fc; font-family: Arial, sans-serif; }
+a { color: inherit; text-decoration: none; }
+.landing { max-width: 760px; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 48px; margin: auto; }
+.eyebrow { color: var(--green); font: 700 12px monospace; letter-spacing: .16em; }
+h1 { font-size: clamp(42px, 8vw, 78px); line-height: 1.03; margin: 18px 0; letter-spacing: -.05em; }
+.lede { color: #c9d1d9; font-size: 19px; line-height: 1.6; max-width: 600px; }
+.button { background: var(--green); color: #07140b; border-radius: 8px; padding: 14px 20px; font-weight: 700; width: fit-content; margin-top: 20px; }
+.honesty, .hint { color: var(--muted); font-size: 13px; }
+.editor-shell { min-height: 100vh; }
+.topbar { border-bottom: 1px solid #30363d; display: flex; justify-content: space-between; padding: 20px 5vw; color: var(--muted); font-size: 13px; }
+.topbar a { color: #f0f6fc; font-weight: 700; }
+.editor { max-width: 1100px; margin: auto; padding: 60px 5vw; }
+.editor-heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; }
+.editor-heading h1 { font-size: clamp(38px, 6vw, 64px); }
+.text-input { color: var(--muted); display: grid; gap: 8px; font-size: 12px; }
+input { background: var(--panel); border: 1px solid #30363d; border-radius: 6px; color: white; font: 700 18px monospace; padding: 12px; text-transform: uppercase; }
+.card { background: var(--panel); border: 1px solid #30363d; border-radius: 10px; padding: 32px; overflow: hidden; }
+.grid-scroll { overflow-x: auto; padding-bottom: 12px; }
+.contribution-grid { display: block; min-width: 900px; height: auto; }
+.contribution-grid rect { cursor: pointer; outline: none; }
+.contribution-grid rect:focus { stroke: white; stroke-width: 2; }
+.legend { display: flex; align-items: center; gap: 6px; color: var(--muted); font: 11px monospace; margin-top: 24px; }
+.legend i { width: 14px; height: 14px; border-radius: 3px; background: #161b22; }
+.level-1 { background: #0e4429 !important; }.level-2 { background: #006d32 !important; }.level-3 { background: #26a641 !important; }.level-4 { background: #39d353 !important; }
+@media (max-width: 600px) { .landing { padding: 28px; } .topbar span { display: none; } .editor { padding-top: 36px; } .editor-heading { align-items: start; flex-direction: column; } .card { padding: 18px; } }
