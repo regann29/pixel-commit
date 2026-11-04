@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { ContributionGrid } from "@/components/ContributionGrid";
 import { createPattern, type Level } from "@/lib/core/pattern";
 import { textToGrid } from "@/lib/core/text-to-pixel";
@@ -8,7 +8,6 @@ import { textToGrid } from "@/lib/core/text-to-pixel";
 export default function EditorPage() {
   const [text, setText] = useState("PIXEL");
   const [pattern, setPattern] = useState(() => createPattern());
-  const rendered = useMemo(() => textToGrid(text, pattern.cols), [text, pattern.cols]);
 
   function applyText(value: string) {
     setText(value);

@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/editor/layout,_N_T_/editor/page,_N_T_/editor"
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/39dcd274d44697e206d5ec5a93c93da73b6ee3778c9e5716e02db41e9a6271a5/$/editor",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/editor/page"
+    },
+    "isFallback": false
+  }
+}
