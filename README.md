@@ -47,13 +47,6 @@ A square on GitHub only turns green when you do real work, such as saving a real
 
 You need a computer with [Node.js](https://nodejs.org) installed.
 
-```bash
-git clone https://github.com/<your-username>/pixel-commit.git
-cd pixel-commit
-npm install
-npm run dev
-```
-
 Then open **http://localhost:3000** in your browser. No sign-up and no GitHub login needed.
 
 ## Where the project is heading
